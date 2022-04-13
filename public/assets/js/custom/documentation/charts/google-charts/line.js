@@ -1,0 +1,49 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/src/js/custom/documentation/charts/google-charts/line.js":
+/*!****************************************************************************!*\
+  !*** ./resources/src/js/custom/documentation/charts/google-charts/line.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n // Class definition\n\nvar KTGoogleChartLineDemo = function () {\n  // Private functions\n  var exampleLine = function exampleLine() {\n    // GOOGLE CHARTS INIT\n    google.load('visualization', '1', {\n      packages: ['corechart', 'bar', 'line']\n    });\n    google.setOnLoadCallback(function () {\n      // LINE CHART\n      var data = new google.visualization.DataTable();\n      data.addColumn('number', 'Day');\n      data.addColumn('number', 'Guardians of the Galaxy');\n      data.addColumn('number', 'The Avengers');\n      data.addColumn('number', 'Transformers: Age of Extinction');\n      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);\n      var options = {\n        chart: {\n          title: 'Box Office Earnings in First Two Weeks of Opening',\n          subtitle: 'in millions of dollars (USD)'\n        },\n        colors: ['#6e4ff5', '#f6aa33', '#fe3995']\n      };\n      var chart = new google.charts.Line(document.getElementById('kt_docs_google_chart_line'));\n      chart.draw(data, options);\n    });\n  };\n\n  return {\n    // Public Functions\n    init: function init() {\n      exampleLine();\n    }\n  };\n}(); // On document ready\n\n\nKTUtil.onDOMContentLoaded(function () {\n  KTGoogleChartLineDemo.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc3JjL2pzL2N1c3RvbS9kb2N1bWVudGF0aW9uL2NoYXJ0cy9nb29nbGUtY2hhcnRzL2xpbmUuanMuanMiLCJtYXBwaW5ncyI6IjtDQUVBOztBQUNBLElBQUlBLHFCQUFxQixHQUFHLFlBQVk7QUFDcEM7QUFDQSxNQUFJQyxXQUFXLEdBQUcsU0FBZEEsV0FBYyxHQUFZO0FBQzFCO0FBQ0FDLElBQUFBLE1BQU0sQ0FBQ0MsSUFBUCxDQUFZLGVBQVosRUFBNkIsR0FBN0IsRUFBa0M7QUFDOUJDLE1BQUFBLFFBQVEsRUFBRSxDQUFDLFdBQUQsRUFBYyxLQUFkLEVBQXFCLE1BQXJCO0FBRG9CLEtBQWxDO0FBSUFGLElBQUFBLE1BQU0sQ0FBQ0csaUJBQVAsQ0FBeUIsWUFBWTtBQUNqQztBQUNBLFVBQUlDLElBQUksR0FBRyxJQUFJSixNQUFNLENBQUNLLGFBQVAsQ0FBcUJDLFNBQXpCLEVBQVg7QUFDQUYsTUFBQUEsSUFBSSxDQUFDRyxTQUFMLENBQWUsUUFBZixFQUF5QixLQUF6QjtBQUNBSCxNQUFBQSxJQUFJLENBQUNHLFNBQUwsQ0FBZSxRQUFmLEVBQXlCLHlCQUF6QjtBQUNBSCxNQUFBQSxJQUFJLENBQUNHLFNBQUwsQ0FBZSxRQUFmLEVBQXlCLGNBQXpCO0FBQ0FILE1BQUFBLElBQUksQ0FBQ0csU0FBTCxDQUFlLFFBQWYsRUFBeUIsaUNBQXpCO0FBRUFILE1BQUFBLElBQUksQ0FBQ0ksT0FBTCxDQUFhLENBQ1QsQ0FBQyxDQUFELEVBQUksSUFBSixFQUFVLElBQVYsRUFBZ0IsSUFBaEIsQ0FEUyxFQUVULENBQUMsQ0FBRCxFQUFJLElBQUosRUFBVSxJQUFWLEVBQWdCLElBQWhCLENBRlMsRUFHVCxDQUFDLENBQUQsRUFBSSxJQUFKLEVBQVUsRUFBVixFQUFjLElBQWQsQ0FIUyxFQUlULENBQUMsQ0FBRCxFQUFJLElBQUosRUFBVSxJQUFWLEVBQWdCLElBQWhCLENBSlMsRUFLVCxDQUFDLENBQUQsRUFBSSxJQUFKLEVBQVUsSUFBVixFQUFnQixJQUFoQixDQUxTLEVBTVQsQ0FBQyxDQUFELEVBQUksR0FBSixFQUFTLElBQVQsRUFBZSxHQUFmLENBTlMsRUFPVCxDQUFDLENBQUQsRUFBSSxHQUFKLEVBQVMsSUFBVCxFQUFlLEdBQWYsQ0FQUyxFQVFULENBQUMsQ0FBRCxFQUFJLElBQUosRUFBVSxJQUFWLEVBQWdCLElBQWhCLENBUlMsRUFTVCxDQUFDLENBQUQsRUFBSSxJQUFKLEVBQVUsSUFBVixFQUFnQixJQUFoQixDQVRTLEVBVVQsQ0FBQyxFQUFELEVBQUssSUFBTCxFQUFXLElBQVgsRUFBaUIsSUFBakIsQ0FWUyxFQVdULENBQUMsRUFBRCxFQUFLLEdBQUwsRUFBVSxHQUFWLEVBQWUsR0FBZixDQVhTLEVBWVQsQ0FBQyxFQUFELEVBQUssR0FBTCxFQUFVLEdBQVYsRUFBZSxHQUFmLENBWlMsRUFhVCxDQUFDLEVBQUQsRUFBSyxHQUFMLEVBQVUsR0FBVixFQUFlLEdBQWYsQ0FiUyxFQWNULENBQUMsRUFBRCxFQUFLLEdBQUwsRUFBVSxHQUFWLEVBQWUsR0FBZixDQWRTLENBQWI7QUFpQkEsVUFBSUMsT0FBTyxHQUFHO0FBQ1ZDLFFBQUFBLEtBQUssRUFBRTtBQUNIQyxVQUFBQSxLQUFLLEVBQUUsbURBREo7QUFFSEMsVUFBQUEsUUFBUSxFQUFFO0FBRlAsU0FERztBQUtWQyxRQUFBQSxNQUFNLEVBQUUsQ0FBQyxTQUFELEVBQVksU0FBWixFQUF1QixTQUF2QjtBQUxFLE9BQWQ7QUFRQSxVQUFJSCxLQUFLLEdBQUcsSUFBSVYsTUFBTSxDQUFDYyxNQUFQLENBQWNDLElBQWxCLENBQXVCQyxRQUFRLENBQUNDLGNBQVQsQ0FBd0IsMkJBQXhCLENBQXZCLENBQVo7QUFDQVAsTUFBQUEsS0FBSyxDQUFDUSxJQUFOLENBQVdkLElBQVgsRUFBaUJLLE9BQWpCO0FBQ0gsS0FuQ0Q7QUFvQ0gsR0ExQ0Q7O0FBNENBLFNBQU87QUFDSDtBQUNBVSxJQUFBQSxJQUFJLEVBQUUsZ0JBQVk7QUFDZHBCLE1BQUFBLFdBQVc7QUFDZDtBQUpFLEdBQVA7QUFNSCxDQXBEMkIsRUFBNUIsRUFzREE7OztBQUNBcUIsTUFBTSxDQUFDQyxrQkFBUCxDQUEwQixZQUFZO0FBQ2xDdkIsRUFBQUEscUJBQXFCLENBQUNxQixJQUF0QjtBQUNILENBRkQiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc3JjL2pzL2N1c3RvbS9kb2N1bWVudGF0aW9uL2NoYXJ0cy9nb29nbGUtY2hhcnRzL2xpbmUuanM/NjJkMiJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcclxuXHJcbi8vIENsYXNzIGRlZmluaXRpb25cclxudmFyIEtUR29vZ2xlQ2hhcnRMaW5lRGVtbyA9IGZ1bmN0aW9uICgpIHtcclxuICAgIC8vIFByaXZhdGUgZnVuY3Rpb25zXHJcbiAgICB2YXIgZXhhbXBsZUxpbmUgPSBmdW5jdGlvbiAoKSB7XHJcbiAgICAgICAgLy8gR09PR0xFIENIQVJUUyBJTklUXHJcbiAgICAgICAgZ29vZ2xlLmxvYWQoJ3Zpc3VhbGl6YXRpb24nLCAnMScsIHtcclxuICAgICAgICAgICAgcGFja2FnZXM6IFsnY29yZWNoYXJ0JywgJ2JhcicsICdsaW5lJ11cclxuICAgICAgICB9KTtcclxuXHJcbiAgICAgICAgZ29vZ2xlLnNldE9uTG9hZENhbGxiYWNrKGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgLy8gTElORSBDSEFSVFxyXG4gICAgICAgICAgICB2YXIgZGF0YSA9IG5ldyBnb29nbGUudmlzdWFsaXphdGlvbi5EYXRhVGFibGUoKTtcclxuICAgICAgICAgICAgZGF0YS5hZGRDb2x1bW4oJ251bWJlcicsICdEYXknKTtcclxuICAgICAgICAgICAgZGF0YS5hZGRDb2x1bW4oJ251bWJlcicsICdHdWFyZGlhbnMgb2YgdGhlIEdhbGF4eScpO1xyXG4gICAgICAgICAgICBkYXRhLmFkZENvbHVtbignbnVtYmVyJywgJ1RoZSBBdmVuZ2VycycpO1xyXG4gICAgICAgICAgICBkYXRhLmFkZENvbHVtbignbnVtYmVyJywgJ1RyYW5zZm9ybWVyczogQWdlIG9mIEV4dGluY3Rpb24nKTtcclxuXHJcbiAgICAgICAgICAgIGRhdGEuYWRkUm93cyhbXHJcbiAgICAgICAgICAgICAgICBbMSwgMzcuOCwgODAuOCwgNDEuOF0sXHJcbiAgICAgICAgICAgICAgICBbMiwgMzAuOSwgNjkuNSwgMzIuNF0sXHJcbiAgICAgICAgICAgICAgICBbMywgMjUuNCwgNTcsIDI1LjddLFxyXG4gICAgICAgICAgICAgICAgWzQsIDExLjcsIDE4LjgsIDEwLjVdLFxyXG4gICAgICAgICAgICAgICAgWzUsIDExLjksIDE3LjYsIDEwLjRdLFxyXG4gICAgICAgICAgICAgICAgWzYsIDguOCwgMTMuNiwgNy43XSxcclxuICAgICAgICAgICAgICAgIFs3LCA3LjYsIDEyLjMsIDkuNl0sXHJcbiAgICAgICAgICAgICAgICBbOCwgMTIuMywgMjkuMiwgMTAuNl0sXHJcbiAgICAgICAgICAgICAgICBbOSwgMTYuOSwgNDIuOSwgMTQuOF0sXHJcbiAgICAgICAgICAgICAgICBbMTAsIDEyLjgsIDMwLjksIDExLjZdLFxyXG4gICAgICAgICAgICAgICAgWzExLCA1LjMsIDcuOSwgNC43XSxcclxuICAgICAgICAgICAgICAgIFsxMiwgNi42LCA4LjQsIDUuMl0sXHJcbiAgICAgICAgICAgICAgICBbMTMsIDQuOCwgNi4zLCAzLjZdLFxyXG4gICAgICAgICAgICAgICAgWzE0LCA0LjIsIDYuMiwgMy40XVxyXG4gICAgICAgICAgICBdKTtcclxuXHJcbiAgICAgICAgICAgIHZhciBvcHRpb25zID0ge1xyXG4gICAgICAgICAgICAgICAgY2hhcnQ6IHtcclxuICAgICAgICAgICAgICAgICAgICB0aXRsZTogJ0JveCBPZmZpY2UgRWFybmluZ3MgaW4gRmlyc3QgVHdvIFdlZWtzIG9mIE9wZW5pbmcnLFxyXG4gICAgICAgICAgICAgICAgICAgIHN1YnRpdGxlOiAnaW4gbWlsbGlvbnMgb2YgZG9sbGFycyAoVVNEKSdcclxuICAgICAgICAgICAgICAgIH0sXHJcbiAgICAgICAgICAgICAgICBjb2xvcnM6IFsnIzZlNGZmNScsICcjZjZhYTMzJywgJyNmZTM5OTUnXVxyXG4gICAgICAgICAgICB9O1xyXG5cclxuICAgICAgICAgICAgdmFyIGNoYXJ0ID0gbmV3IGdvb2dsZS5jaGFydHMuTGluZShkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgna3RfZG9jc19nb29nbGVfY2hhcnRfbGluZScpKTtcclxuICAgICAgICAgICAgY2hhcnQuZHJhdyhkYXRhLCBvcHRpb25zKTtcclxuICAgICAgICB9KTtcclxuICAgIH1cclxuXHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIC8vIFB1YmxpYyBGdW5jdGlvbnNcclxuICAgICAgICBpbml0OiBmdW5jdGlvbiAoKSB7XHJcbiAgICAgICAgICAgIGV4YW1wbGVMaW5lKCk7XHJcbiAgICAgICAgfVxyXG4gICAgfTtcclxufSgpO1xyXG5cclxuLy8gT24gZG9jdW1lbnQgcmVhZHlcclxuS1RVdGlsLm9uRE9NQ29udGVudExvYWRlZChmdW5jdGlvbiAoKSB7XHJcbiAgICBLVEdvb2dsZUNoYXJ0TGluZURlbW8uaW5pdCgpO1xyXG59KTtcclxuIl0sIm5hbWVzIjpbIktUR29vZ2xlQ2hhcnRMaW5lRGVtbyIsImV4YW1wbGVMaW5lIiwiZ29vZ2xlIiwibG9hZCIsInBhY2thZ2VzIiwic2V0T25Mb2FkQ2FsbGJhY2siLCJkYXRhIiwidmlzdWFsaXphdGlvbiIsIkRhdGFUYWJsZSIsImFkZENvbHVtbiIsImFkZFJvd3MiLCJvcHRpb25zIiwiY2hhcnQiLCJ0aXRsZSIsInN1YnRpdGxlIiwiY29sb3JzIiwiY2hhcnRzIiwiTGluZSIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJkcmF3IiwiaW5pdCIsIktUVXRpbCIsIm9uRE9NQ29udGVudExvYWRlZCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/src/js/custom/documentation/charts/google-charts/line.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/src/js/custom/documentation/charts/google-charts/line.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ })()
+;

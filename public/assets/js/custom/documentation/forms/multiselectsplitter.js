@@ -1,0 +1,49 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/src/js/custom/documentation/forms/multiselectsplitter.js":
+/*!****************************************************************************!*\
+  !*** ./resources/src/js/custom/documentation/forms/multiselectsplitter.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n // Class definition\n\nvar KTFormsMultiselectsplitterDemos = function () {\n  // Private functions\n  var example1 = function example1() {\n    $(\"#kt_multiselectsplitter_example_1\").multiselectsplitter();\n  };\n\n  var example2 = function example2() {\n    $('#kt_multiselectsplitter_example_2').multiselectsplitter({\n      selectSize: 7,\n      clearOnFirstChange: true,\n      groupCounter: true\n    });\n  };\n\n  var example3 = function example3() {\n    $('#kt_multiselectsplitter_example_3').multiselectsplitter({\n      groupCounter: true,\n      maximumSelected: 2\n    });\n  };\n\n  var example4 = function example4() {\n    $('#kt_multiselectsplitter_example_4').multiselectsplitter({\n      groupCounter: true,\n      maximumSelected: 3,\n      onlySameGroup: true\n    });\n  };\n\n  var example5 = function example5() {\n    $('#kt_multiselectsplitter_example_5').multiselectsplitter({\n      size: 6,\n      groupCounter: true,\n      maximumSelected: 2,\n      maximumAlert: function maximumAlert(maximumSelected) {\n        alert(\"You choose \" + (maximumSelected + 1) + \" options. Are you crazy ?\");\n      },\n      createFirstSelect: function createFirstSelect(label, $originalSelect) {\n        return \"<option class=\\\"text-success\\\">prefix - \" + label + \"</option>\";\n      },\n      createSecondSelect: function createSecondSelect(label, $firstSelect) {\n        return \"<option class=\\\"text-danger\\\"> ??? </option>\";\n      }\n    });\n  };\n\n  return {\n    // Public Functions\n    init: function init() {\n      example1();\n      example2();\n      example3();\n      example4();\n      example5();\n    }\n  };\n}(); // On document ready\n\n\nKTUtil.onDOMContentLoaded(function () {\n  KTFormsMultiselectsplitterDemos.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc3JjL2pzL2N1c3RvbS9kb2N1bWVudGF0aW9uL2Zvcm1zL211bHRpc2VsZWN0c3BsaXR0ZXIuanMuanMiLCJtYXBwaW5ncyI6IjtDQUVBOztBQUNBLElBQUlBLCtCQUErQixHQUFHLFlBQVc7QUFDN0M7QUFDQSxNQUFJQyxRQUFRLEdBQUcsU0FBWEEsUUFBVyxHQUFXO0FBQ3RCQyxJQUFBQSxDQUFDLENBQUMsbUNBQUQsQ0FBRCxDQUF1Q0MsbUJBQXZDO0FBQ0gsR0FGRDs7QUFJQSxNQUFJQyxRQUFRLEdBQUcsU0FBWEEsUUFBVyxHQUFXO0FBQ3RCRixJQUFBQSxDQUFDLENBQUMsbUNBQUQsQ0FBRCxDQUF1Q0MsbUJBQXZDLENBQTJEO0FBQzdERSxNQUFBQSxVQUFVLEVBQUUsQ0FEaUQ7QUFFdkRDLE1BQUFBLGtCQUFrQixFQUFFLElBRm1DO0FBRzdEQyxNQUFBQSxZQUFZLEVBQUU7QUFIK0MsS0FBM0Q7QUFLSCxHQU5EOztBQVFBLE1BQUlDLFFBQVEsR0FBRyxTQUFYQSxRQUFXLEdBQVc7QUFDdEJOLElBQUFBLENBQUMsQ0FBQyxtQ0FBRCxDQUFELENBQXVDQyxtQkFBdkMsQ0FBMkQ7QUFDN0RJLE1BQUFBLFlBQVksRUFBRSxJQUQrQztBQUV2REUsTUFBQUEsZUFBZSxFQUFFO0FBRnNDLEtBQTNEO0FBSUgsR0FMRDs7QUFPQSxNQUFJQyxRQUFRLEdBQUcsU0FBWEEsUUFBVyxHQUFXO0FBQ3RCUixJQUFBQSxDQUFDLENBQUMsbUNBQUQsQ0FBRCxDQUF1Q0MsbUJBQXZDLENBQTJEO0FBQzdESSxNQUFBQSxZQUFZLEVBQUUsSUFEK0M7QUFFdkRFLE1BQUFBLGVBQWUsRUFBRSxDQUZzQztBQUd2REUsTUFBQUEsYUFBYSxFQUFFO0FBSHdDLEtBQTNEO0FBS0gsR0FORDs7QUFRQSxNQUFJQyxRQUFRLEdBQUcsU0FBWEEsUUFBVyxHQUFXO0FBQ3RCVixJQUFBQSxDQUFDLENBQUMsbUNBQUQsQ0FBRCxDQUF1Q0MsbUJBQXZDLENBQTJEO0FBQzdEVSxNQUFBQSxJQUFJLEVBQUUsQ0FEdUQ7QUFFN0ROLE1BQUFBLFlBQVksRUFBRSxJQUYrQztBQUd2REUsTUFBQUEsZUFBZSxFQUFFLENBSHNDO0FBSXZESyxNQUFBQSxZQUFZLEVBQUUsc0JBQVNMLGVBQVQsRUFBMEI7QUFDcENNLFFBQUFBLEtBQUssQ0FBQyxpQkFBa0JOLGVBQWUsR0FBRyxDQUFwQyxJQUEwQywyQkFBM0MsQ0FBTDtBQUNILE9BTnNEO0FBT3ZETyxNQUFBQSxpQkFBaUIsRUFBRSwyQkFBVUMsS0FBVixFQUFpQkMsZUFBakIsRUFBa0M7QUFDakQsZUFBTyw2Q0FBNkNELEtBQTdDLEdBQXFELFdBQTVEO0FBQ0gsT0FUc0Q7QUFVdkRFLE1BQUFBLGtCQUFrQixFQUFFLDRCQUFVRixLQUFWLEVBQWlCRyxZQUFqQixFQUErQjtBQUMvQyxlQUFPLDhDQUFQO0FBQ0g7QUFac0QsS0FBM0Q7QUFjSCxHQWZEOztBQWlCQSxTQUFPO0FBQ0g7QUFDQUMsSUFBQUEsSUFBSSxFQUFFLGdCQUFXO0FBQ2JwQixNQUFBQSxRQUFRO0FBQ1JHLE1BQUFBLFFBQVE7QUFDUkksTUFBQUEsUUFBUTtBQUNSRSxNQUFBQSxRQUFRO0FBQ1JFLE1BQUFBLFFBQVE7QUFDWDtBQVJFLEdBQVA7QUFVSCxDQXhEcUMsRUFBdEMsRUEwREE7OztBQUNBVSxNQUFNLENBQUNDLGtCQUFQLENBQTBCLFlBQVc7QUFDakN2QixFQUFBQSwrQkFBK0IsQ0FBQ3FCLElBQWhDO0FBQ0gsQ0FGRCIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zcmMvanMvY3VzdG9tL2RvY3VtZW50YXRpb24vZm9ybXMvbXVsdGlzZWxlY3RzcGxpdHRlci5qcz83MGJkIl0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIHN0cmljdFwiO1xyXG5cclxuLy8gQ2xhc3MgZGVmaW5pdGlvblxyXG52YXIgS1RGb3Jtc011bHRpc2VsZWN0c3BsaXR0ZXJEZW1vcyA9IGZ1bmN0aW9uKCkge1xyXG4gICAgLy8gUHJpdmF0ZSBmdW5jdGlvbnNcclxuICAgIHZhciBleGFtcGxlMSA9IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICQoXCIja3RfbXVsdGlzZWxlY3RzcGxpdHRlcl9leGFtcGxlXzFcIikubXVsdGlzZWxlY3RzcGxpdHRlcigpO1xyXG4gICAgfVxyXG5cclxuICAgIHZhciBleGFtcGxlMiA9IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICQoJyNrdF9tdWx0aXNlbGVjdHNwbGl0dGVyX2V4YW1wbGVfMicpLm11bHRpc2VsZWN0c3BsaXR0ZXIoe1xyXG4gICAgXHRcdHNlbGVjdFNpemU6IDcsXHJcbiAgICAgICAgICAgIGNsZWFyT25GaXJzdENoYW5nZTogdHJ1ZSxcclxuICAgIFx0XHRncm91cENvdW50ZXI6IHRydWVcclxuICAgICAgICB9KTtcclxuICAgIH1cclxuXHJcbiAgICB2YXIgZXhhbXBsZTMgPSBmdW5jdGlvbigpIHtcclxuICAgICAgICAkKCcja3RfbXVsdGlzZWxlY3RzcGxpdHRlcl9leGFtcGxlXzMnKS5tdWx0aXNlbGVjdHNwbGl0dGVyKHtcclxuICAgIFx0XHRncm91cENvdW50ZXI6IHRydWUsXHJcbiAgICAgICAgICAgIG1heGltdW1TZWxlY3RlZDogMlxyXG4gICAgICAgIH0pO1xyXG4gICAgfVxyXG5cclxuICAgIHZhciBleGFtcGxlNCA9IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICQoJyNrdF9tdWx0aXNlbGVjdHNwbGl0dGVyX2V4YW1wbGVfNCcpLm11bHRpc2VsZWN0c3BsaXR0ZXIoe1xyXG4gICAgXHRcdGdyb3VwQ291bnRlcjogdHJ1ZSxcclxuICAgICAgICAgICAgbWF4aW11bVNlbGVjdGVkOiAzLFxyXG4gICAgICAgICAgICBvbmx5U2FtZUdyb3VwOiB0cnVlXHJcbiAgICAgICAgfSk7XHJcbiAgICB9XHJcblxyXG4gICAgdmFyIGV4YW1wbGU1ID0gZnVuY3Rpb24oKSB7XHJcbiAgICAgICAgJCgnI2t0X211bHRpc2VsZWN0c3BsaXR0ZXJfZXhhbXBsZV81JykubXVsdGlzZWxlY3RzcGxpdHRlcih7XHJcbiAgICBcdFx0c2l6ZTogNixcclxuICAgIFx0XHRncm91cENvdW50ZXI6IHRydWUsXHJcbiAgICAgICAgICAgIG1heGltdW1TZWxlY3RlZDogMixcclxuICAgICAgICAgICAgbWF4aW11bUFsZXJ0OiBmdW5jdGlvbihtYXhpbXVtU2VsZWN0ZWQpIHtcclxuICAgICAgICAgICAgICAgIGFsZXJ0KFwiWW91IGNob29zZSBcIiArICggbWF4aW11bVNlbGVjdGVkICsgMSApICsgXCIgb3B0aW9ucy4gQXJlIHlvdSBjcmF6eSA/XCIpO1xyXG4gICAgICAgICAgICB9LFxyXG4gICAgICAgICAgICBjcmVhdGVGaXJzdFNlbGVjdDogZnVuY3Rpb24gKGxhYmVsLCAkb3JpZ2luYWxTZWxlY3QpIHsgXHJcbiAgICAgICAgICAgICAgICByZXR1cm4gXCI8b3B0aW9uIGNsYXNzPVxcXCJ0ZXh0LXN1Y2Nlc3NcXFwiPnByZWZpeCAtIFwiICsgbGFiZWwgKyBcIjwvb3B0aW9uPlwiO1xyXG4gICAgICAgICAgICB9LFxyXG4gICAgICAgICAgICBjcmVhdGVTZWNvbmRTZWxlY3Q6IGZ1bmN0aW9uIChsYWJlbCwgJGZpcnN0U2VsZWN0KSB7IFxyXG4gICAgICAgICAgICAgICAgcmV0dXJuIFwiPG9wdGlvbiBjbGFzcz1cXFwidGV4dC1kYW5nZXJcXFwiPiA/Pz8gPC9vcHRpb24+XCI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9KTtcclxuICAgIH1cclxuXHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIC8vIFB1YmxpYyBGdW5jdGlvbnNcclxuICAgICAgICBpbml0OiBmdW5jdGlvbigpIHtcclxuICAgICAgICAgICAgZXhhbXBsZTEoKTtcclxuICAgICAgICAgICAgZXhhbXBsZTIoKTtcclxuICAgICAgICAgICAgZXhhbXBsZTMoKTtcclxuICAgICAgICAgICAgZXhhbXBsZTQoKTtcclxuICAgICAgICAgICAgZXhhbXBsZTUoKTtcclxuICAgICAgICB9XHJcbiAgICB9O1xyXG59KCk7XHJcblxyXG4vLyBPbiBkb2N1bWVudCByZWFkeVxyXG5LVFV0aWwub25ET01Db250ZW50TG9hZGVkKGZ1bmN0aW9uKCkge1xyXG4gICAgS1RGb3Jtc011bHRpc2VsZWN0c3BsaXR0ZXJEZW1vcy5pbml0KCk7XHJcbn0pO1xyXG4iXSwibmFtZXMiOlsiS1RGb3Jtc011bHRpc2VsZWN0c3BsaXR0ZXJEZW1vcyIsImV4YW1wbGUxIiwiJCIsIm11bHRpc2VsZWN0c3BsaXR0ZXIiLCJleGFtcGxlMiIsInNlbGVjdFNpemUiLCJjbGVhck9uRmlyc3RDaGFuZ2UiLCJncm91cENvdW50ZXIiLCJleGFtcGxlMyIsIm1heGltdW1TZWxlY3RlZCIsImV4YW1wbGU0Iiwib25seVNhbWVHcm91cCIsImV4YW1wbGU1Iiwic2l6ZSIsIm1heGltdW1BbGVydCIsImFsZXJ0IiwiY3JlYXRlRmlyc3RTZWxlY3QiLCJsYWJlbCIsIiRvcmlnaW5hbFNlbGVjdCIsImNyZWF0ZVNlY29uZFNlbGVjdCIsIiRmaXJzdFNlbGVjdCIsImluaXQiLCJLVFV0aWwiLCJvbkRPTUNvbnRlbnRMb2FkZWQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/src/js/custom/documentation/forms/multiselectsplitter.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/src/js/custom/documentation/forms/multiselectsplitter.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ })()
+;
