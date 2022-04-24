@@ -1,4 +1,5 @@
 <!--begin::Main-->
+
 <main class="d-flex flex-column flex-root">
 
     <!--begin::Authentication - Sign-in -->
@@ -7,13 +8,12 @@
         <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 
             <!--begin::Logo-->
-            <a href="../dist/index.html" class="mb-5">
                 <img
                     alt="Logo"
-                    src="assets/media/logos/cv.png"
+                    src="assets/img/cv.png"
                     class="h-90px "
                 />
-            </a>
+
 
             <!--begin::Wrapper-->
             <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
@@ -24,17 +24,6 @@
                     <div class="text-center mb-8">
                         <!--begin::Title-->
                         <h1 class="text-dark mb-3">Sign In <span class="text-primary">Resume</span> <span class="text-secondary">Friend</span> </h1>
-
-                        <!--begin::Link-->
-
-                        <div class="text-gray-400 fw-bold fs-4">
-                            A Company?
-                            <a
-                                href="../dist/authentication/base/sign-up.html"
-                                class="link-primary fw-bolder"
-                            >Create an Account</a
-                            >
-                        </div>
 
                     </div>
 
@@ -78,9 +67,10 @@
             </div>
         </div>
         <div class="d-flex align-items-center fw-bold fs-6">
-            <a href="about.blade.php" class="text-muted text-hover-primary pt-10">About Us</a>
+            <a href="{{route('about')}}" class="text-muted text-hover-primary pt-10">About Us</a>
 
         </div>
 
     </div>
 </main>
+

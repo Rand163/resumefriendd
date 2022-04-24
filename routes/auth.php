@@ -7,3 +7,4 @@ use App\Http\Controllers\Controller;
 Route::get('/login',Login::class)->middleware('guest')->name('login');
 Route::post('/logout',[\App\Http\Controllers\AuthController::class,'logout'])->name('logout');
 
+

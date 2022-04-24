@@ -1,3 +1,4 @@
+<div>
 @section("breadcrumb")
     <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 mb-5 mb-lg-0 cursor-default">
         <h1 class="text-dark fw-bolder mt-1 mb-1 fs-2">Users</h1>
@@ -90,8 +91,8 @@
             <tbody class="text-gray-600 fw-bold">
             @forelse($users as $user)
                 <tr>
-                    <td>{{$user->name}}</td>
                     <td>{{$user->id}}</td>
+                    <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->role}}</td>
                     <td>{{$user->company}}</td>
@@ -110,4 +111,5 @@
             {{$users->links()}}
         </div>
     </div>
+</div>
 </div>

@@ -1,4 +1,5 @@
 <!-- Page Heading -->
+<div>
  @section("breadcrumb")
     <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 mb-5 mb-lg-0 cursor-default">
         <h1 class="text-dark fw-bolder mt-1 mb-1 fs-2">Approved Courses</h1>
@@ -40,7 +41,7 @@
         <div class="card-body">
             {{$course->name}}
             <a href="{{$course->link}}" target="_blank" class="btn btn-info">
-                Click here to go to the course
+                Click Here
             </a>
         </div>
         @endforeach
@@ -49,3 +50,4 @@
     <!-- End of Main Content -->
 </div>
 <!-- End of Content Wrapper -->
+</div>

@@ -34,7 +34,6 @@
 									</span>
                         </div>
                         <a href="/" class="d-flex align-items-center">
-                            {{--                            <x-application-logo-colored width="40"></x-application-logo-colored>--}}
                         </a>
                     </div>
                     <div class="d-flex flex-shrink-0">
@@ -50,16 +49,6 @@
                     @yield('content')
                 </div>
             </div>
-
-{{--            <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">--}}
-{{--                <div class="container-xxl d-flex flex-column flex-md-row flex-stack">--}}
-{{--                    <div class="text-dark order-2 order-md-1">--}}
-{{--                        <span class="text-gray-400 fw-bold me-1">Created by</span>--}}
-{{--                        <a href="https://rand.com" target="_blank"--}}
-{{--                           class="text-muted text-hover-primary fw-bold me-2 fs-6">Rand</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
 
         </div>
     </div>

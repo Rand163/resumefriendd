@@ -1,6 +1,6 @@
 <head>
     <base href="">
-    <title>@yield('title', 'Trainee')</title>
+    <title>@yield('title', 'Students')</title>
     <meta charset="utf-8"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon shortcut" href="{{ asset('logo.ico') }}">

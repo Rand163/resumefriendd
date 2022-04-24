@@ -15,6 +15,9 @@ use App\Http\Livewire\Users\{Index,Add,Edit};
 */
 
 
+Route::get('/about',function (){
+    return view('about');
+})->name('about');
 
 Route::group(['middleware'=>['auth']],function (){
      Route::get('/',Welcome::class)->name('welcome')->middleware('student');
