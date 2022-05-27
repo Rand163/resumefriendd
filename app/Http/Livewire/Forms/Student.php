@@ -12,14 +12,8 @@ class Student extends Component
 {
     use WithFileUploads, WithAlert;
 
-    public $file, $company;
+    public $file, $company, $course_file, $report_file, $training_file;
 
-    public function rules()
-    {
-        return [
-            'file' => 'required|mimes:pdf',
-        ];
-    }
 
     public function render()
     {
@@ -29,13 +23,13 @@ class Student extends Component
     public function trainingApproved()
     {
         $validatedData = $this->validate([
-            'file' => 'required|mimes:pdf',
+            'training_file' => 'required|mimes:pdf|max:3000000',
             'company' => 'required',
         ]);
 
         try {
-            $path = $this->file->store('files');
-            $file_name = pathinfo($this->file->getClientOriginalName(), PATHINFO_FILENAME);
+            $path = $this->training_file->store('files');
+            $file_name = pathinfo($this->training_file->getClientOriginalName(), PATHINFO_FILENAME);
 
             Reports::create([
                 'user_id' => auth()->id(),
@@ -43,7 +37,7 @@ class Student extends Component
                 'type' => '1',
                 'path' => $path,
                 'name' => $file_name,
-                'company'=>$this->company
+                'company' => $this->company
             ]);
             $this->makeAlert('success', __('alert.successfully_send', ['model' => 'Report']));
             $this->reset();
@@ -54,11 +48,13 @@ class Student extends Component
 
     public function trainingReport()
     {
-        dd($this->file);
-        $this->validate();
+        $validatedData = $this->validate([
+            'report_file' => 'required|mimes:pdf|max:3000000',
+        ]);
+
         try {
-            $path = $this->file->store('files');
-            $file_name = pathinfo($this->file->getClientOriginalName(), PATHINFO_FILENAME);
+            $path = $this->report_file->store('files');
+            $file_name = pathinfo($this->report_file->getClientOriginalName(), PATHINFO_FILENAME);
 
             Reports::create([
                 'user_id' => auth()->id(),
@@ -76,10 +72,13 @@ class Student extends Component
 
     public function trainingCourse()
     {
-        $this->validate();
+        $validatedData = $this->validate([
+            'course_file' => 'required|mimes:pdf|max:3000000',
+        ]);
+
         try {
-            $path = $this->file->store('files');
-            $file_name = pathinfo($this->file->getClientOriginalName(), PATHINFO_FILENAME);
+            $path = $this->course_file->store('files');
+            $file_name = pathinfo($this->course_file->getClientOriginalName(), PATHINFO_FILENAME);
             User::where('id', auth()->id())->update([
                 'company' => $this->company
             ]);

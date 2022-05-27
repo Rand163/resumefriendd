@@ -45,9 +45,11 @@ class SupervisorApproval extends Component
         try {
             $user = User::findOrFail($user);
 
-            $user->update([
-                "company" => $company,
-            ]);
+            if ($type == 1) {
+                $user->update([
+                    "company" => $company,
+                ]);
+            }
 
             if ($type == 3) {
                 if ($user->progress < 85) {
@@ -58,6 +60,7 @@ class SupervisorApproval extends Component
                     ]);
                 }
             }
+            
             Reports::findOrFail($id)->update([
                 'status' => '2',
             ]);

@@ -36,7 +36,10 @@
                           <label for="trainingApproved" class="btn btn-primary btn-icon-split">
                               <span class="text ">Upload File</span>
                           </label>
-                          <input type="file" wire:model.defer="file" id="trainingApproved" hidden>
+                          <input type="file" wire:model.defer="training_file" id="trainingApproved" hidden>
+                          @error("training_file")
+                          <small class="text-danger">{{$message}}</small>
+                          @enderror
                       </div>
                         <div class="ml-3">
                             <button type="submit" class="btn btn-success btn-icon-split ms-3">
@@ -59,10 +62,13 @@
                 <tr>
                     <th class="d-flex">
                         <div>
-                            <label for="trainingApproved" class="btn btn-primary btn-icon-split">
+                            <label for="trainingReport" class="btn btn-primary btn-icon-split">
                                 <span class="text">Upload File</span>
                             </label>
-                            <input type="file" wire:model.defer="file" id="trainingApproved" hidden>
+                            <input type="file" wire:model.defer="report_file" id="trainingReport" hidden>
+                            @error("report_file")
+                            <small class="text-danger">{{$message}}</small>
+                            @enderror
                         </div>
                         <div class="ml-3">
                             <button type="submit" class="btn btn-success btn-icon-split ms-3">
@@ -82,22 +88,12 @@
                 <tbody>
 
                 <tr>
-                    <th>
-                        <input wire:model.defer="company" type="text"
-                               class="form-control  w-500px @error('company') is-invalid @enderror" id="name"
-                               placeholder="Course Name" maxlength="64" required>
-                        @error('company') <span
-                            class="error small form-text invalid-feedback">{{ $message }}</span> @enderror
-                    </th>
-                 </tr>
-
-                <tr>
                     <th class="d-flex">
                         <div>
-                            <label for="trainingApproved" class="btn btn-primary btn-icon-split">
+                            <label for="trainingCourse" class="btn btn-primary btn-icon-split">
                                 <span class="text">Upload File</span>
                             </label>
-                            <input type="file" wire:model.defer="file" id="trainingApproved" hidden>
+                            <input type="file" wire:model.defer="course_file" id="trainingCourse" hidden>
                         </div>
                         <div class="ml-3">
                             <button type="submit" class="btn btn-success btn-icon-split ms-3">
@@ -105,8 +101,8 @@
                             </button>
                         </div>
                         <div>
-                            @error("file")
-                            <small>{{$message}}</small>
+                            @error("course_file")
+                            <small class="text-danger">{{$message}}</small>
                             @enderror
                         </div>
                     </th>
