@@ -16,6 +16,7 @@ class CreateReportsTable extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('company')->nullable();
             $table->text('path');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('supervisor_id')->constrained('users')->onDelete('cascade');

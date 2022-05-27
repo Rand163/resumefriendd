@@ -40,10 +40,15 @@ class SupervisorApproval extends Component
         }
     }
 
-    public function approve($id, $user, $type)
+    public function approve($id, $user, $type, $company)
     {
         try {
             $user = User::findOrFail($user);
+
+            $user->update([
+                "company" => $company,
+            ]);
+
             if ($type == 3) {
                 if ($user->progress < 85) {
                     $user->increment('progress', 16.66);

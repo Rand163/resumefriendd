@@ -12,7 +12,7 @@ class Login extends Component
     {
         return [
             'email' => 'required|email|exists:users,email',
-            'password' => 'required'
+            'password' => 'required|min:6|string'
         ];
     }
 
@@ -41,7 +41,7 @@ class Login extends Component
                     return redirect()->to('/supervisor/students');
                 }
             } else {
-                return redirect()->back()->withErrors('message');
+                session()->flash('message', 'Please verify the information');
             }
         } catch (\Exception $exception) {
             session()->flash('message', 'error !!!');

@@ -79,7 +79,7 @@
 
                         <td><a wire:click="download('{{$file->path}}','{{$file->name}}')" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                     class="fas fa-download fa-sm text-white-50"></i> Generate Report</a></td>
-                        <td><a wire:click="approve('{{$file->id}}','{{$file->user->id}}','{{$file->type}}')" class="btn btn-success btn-circle">
+                        <td><a wire:click="approve('{{$file->id}}','{{$file->user->id}}','{{$file->type}}','{{$file->company}}')" class="btn btn-success btn-circle">
                                 <i class="fas fa-check"></i>
                             </a></td>
                         <td><a wire:click="delete('{{$file->id}}')" class="btn btn-danger btn-circle">

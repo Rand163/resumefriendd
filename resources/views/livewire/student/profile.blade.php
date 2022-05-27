@@ -46,6 +46,7 @@
                             </div>
                         </div>
                         <hr>
+                        @if(\auth()->user()->role == "student")
                         <div class="row">
                             <div class="col-sm-3">
                                 <h6 class="mb-0">Supervisor</h6>
@@ -55,7 +56,6 @@
                             </div>
                         </div>
                         <hr>
-
                         <div class="row">
                             <div class="col-sm-3">
                                 <h6 class="mb-0">Company</h6>
@@ -79,6 +79,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>

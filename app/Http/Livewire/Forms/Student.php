@@ -37,16 +37,13 @@ class Student extends Component
             $path = $this->file->store('files');
             $file_name = pathinfo($this->file->getClientOriginalName(), PATHINFO_FILENAME);
 
-            User::where('id', auth()->id())->update([
-                'company' => $this->company
-            ]);
-
             Reports::create([
                 'user_id' => auth()->id(),
                 'supervisor_id' => auth()->user()->supervisor_id,
                 'type' => '1',
                 'path' => $path,
                 'name' => $file_name,
+                'company'=>$this->company
             ]);
             $this->makeAlert('success', __('alert.successfully_send', ['model' => 'Report']));
             $this->reset();
@@ -57,6 +54,7 @@ class Student extends Component
 
     public function trainingReport()
     {
+        dd($this->file);
         $this->validate();
         try {
             $path = $this->file->store('files');

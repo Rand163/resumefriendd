@@ -14,8 +14,9 @@
     @livewireStyles
 </head>
 <body id="kt_body">
+<main class="d-flex flex-column flex-root">
 @yield('content')
-
+</main>
 <script>var hostUrl = "assets/";</script>
 <script src="{{ asset('seven/plugins/global/plugins.bundle.js') }}"></script>
 <script src="{{ asset('seven/js/scripts.bundle.js') }}"></script>
